@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/step.iml" filepath="$PROJECT_DIR$/.idea/modules/step.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/step-by-step-back.iml" filepath="$PROJECT_DIR$/.idea/step-by-step-back.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/step.main.iml" filepath="$PROJECT_DIR$/.idea/modules/step.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/step.test.iml" filepath="$PROJECT_DIR$/.idea/modules/step.test.iml" />
     </modules>
   </component>
 </project>
