@@ -1,4 +1,6 @@
-# Step_by_Step Back End
+## 수정사항
 
-### 수정 사항
-MySql, Mybatis 설정
+## <span style="color:#6ecde3">⚙ </span>환경 세팅
+### MySql 8.0
+### Mybatis 3.0
+### Swagger 2.9.2
