@@ -1,6 +1,8 @@
-## 수정사항
-
-## <span style="color:#6ecde3">⚙ </span>환경 세팅
+##  프로젝트 개발 환경
+### SpringBoot 2.7.6
+### JAVA 11
 ### MySql 8.0
-### Mybatis 3.0
-### Swagger 2.9.2
+
+## ⚙ 수정 사항
+### Mybatis 3.0 라이브러리 추가
+### Swagger 2.9.2 라이브러리 추가
