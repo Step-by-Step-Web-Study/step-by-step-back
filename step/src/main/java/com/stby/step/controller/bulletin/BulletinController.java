@@ -8,10 +8,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 
@@ -34,8 +31,9 @@ public class BulletinController {
         return "";
     }
 
-    @ApiOperation(value = "게시글 작성 화면으로 이동")
+    @ApiOperation(value = "게시글 작성 화면 이동 비동기 통신")
     @GetMapping("/write")
+    @ResponseBody
     public String insertBulletin() {
         return "";
     }
@@ -49,13 +47,15 @@ public class BulletinController {
             @ApiImplicitParam(name="principal", value="DEFAULT 게시글 작성자")
     })
     @PostMapping("/writeBulletin")
+    @ResponseBody
     public String insertBulletin(BulletinDTO bulletinDTO, Principal principal) {
         return "";
     }
 
-    @ApiOperation(value = "게시글 수정 화면으로 이동")
+    @ApiOperation(value = "게시글 수정 화면으로 이동 비동기 통신")
     @ApiImplicitParam(name="bulletinId", value="게시글 번호")
     @GetMapping("/update/{bulletinId}")
+    @ResponseBody
     public String updateBulletin(@PathVariable int bulletinId, Model model) {
         return "";
     }
@@ -69,7 +69,8 @@ public class BulletinController {
             @ApiImplicitParam(name="principal", value="DEFAULT 게시글 작성자")
     })
     @PostMapping("/update")
-    public String updateBulletin(BulletinDTO bulletinDTO) {
+    @ResponseBody
+    public String updateBulletin( BulletinDTO bulletinDTO) {
         return "";
     }
 
