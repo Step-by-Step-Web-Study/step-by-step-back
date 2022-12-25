@@ -1,7 +1,7 @@
 package com.stby.step.service;
 
-import com.stby.step.mapper.TestMapper;
-import com.stby.step.mapper.UserMapper;
+import com.stby.step.dao.TestMapper;
+import com.stby.step.dao.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

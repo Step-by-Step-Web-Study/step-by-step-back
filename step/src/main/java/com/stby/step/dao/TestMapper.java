@@ -1,4 +1,4 @@
-package com.stby.step.mapper;
+package com.stby.step.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 @Mapper
 @Repository
-public interface UserMapper {
+public interface TestMapper {
 
-    ArrayList<HashMap<String, Object>> findAll();
+    ArrayList<HashMap<String, Object>> testAll();
 }
