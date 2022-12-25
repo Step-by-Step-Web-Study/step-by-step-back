@@ -12,6 +12,7 @@ public class CommentDTO {
     private int commentId;
     private int bulletinId;
     private int writerId;
-    private String comment;
-    private Date insertDate;
+    private int user_id;
+    private String com_content;
+    private Date com_date;
 }
