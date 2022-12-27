@@ -1,27 +1,46 @@
 package com.stby.step.service;
 
-import com.stby.step.dao.TestMapper;
-import com.stby.step.dao.UserMapper;
+import com.stby.step.dao.UserDAO;
+import com.stby.step.dto.member.UserInfoDTO;
+import com.stby.step.dto.member.UserLoginDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.security.Principal;
+import java.util.List;
+
 
 @Service
 public class UserService {
 
-    @Autowired
-    UserMapper userMapper;
 
     @Autowired
-    TestMapper testMapper;
+    UserDAO userDAO;
 
-    public ArrayList<HashMap<String, Object>> findAll() {
-        return userMapper.findAll();
+
+    public List<UserLoginDTO> getcreateAccount(){
+        return userDAO.getcreateAccount();
     }
 
-    public ArrayList<HashMap<String, Object>> testAll() {
-        return testMapper.testAll();
+    public UserLoginDTO getInfo(UserLoginDTO userLoginDTO){
+        return userDAO.getInfo(userLoginDTO);
     }
+
+    public List<UserLoginDTO> getlogin(){
+        return userDAO.getlogin();
+    }
+
+
+    public List<UserInfoDTO> getUserInfo(int userid){
+        return userDAO.getUserInfo(userid);
+    }
+
+    public Principal getUpdateUser(Principal principal){
+        return userDAO.getUpdateUser(principal);
+    }
+
+    public void PutUser(UserInfoDTO userInfoDTO){
+        userDAO.PutUser(userInfoDTO);
+    }
+
 }

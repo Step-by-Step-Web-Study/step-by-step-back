@@ -20,4 +20,5 @@ public class UserInfoDTO {
     private String certificate;
     private Date regdate;
 
+
 }

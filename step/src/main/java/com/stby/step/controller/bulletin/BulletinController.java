@@ -1,16 +1,19 @@
 package com.stby.step.controller.bulletin;
 
 import com.stby.step.dto.bulletin.BulletinDTO;
+import com.stby.step.service.BulletinService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
+import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
@@ -18,24 +21,27 @@ import java.security.Principal;
 @Slf4j
 public class BulletinController {
 
+    @Autowired
+    BulletinService bulletinService;
+
     @ApiOperation(value = "게시글 조회 화면으로 이동")
     @GetMapping("/list")
-    public String getList(Model model) {
-        return "";
+    public List<BulletinDTO> getList(@RequestBody BulletinDTO bulletinDTO, Model model) {
+        return bulletinService.getList(bulletinDTO,model);
     }
 
     @ApiOperation(value = "해당 게시글의 상세 조회 화면으로 이동")
     @ApiImplicitParam(name="bulletinId", value = "게시글 번호")
     @GetMapping("/read/{bulletinId}")
-    public String readBulletin(@PathVariable int bulletinId, Model model) {
-        return "";
+    public List<BulletinDTO> readBulletin(@PathVariable int bulletinId, Model model) {
+        return bulletinService.readBulletin(bulletinId,model);
     }
 
     @ApiOperation(value = "게시글 작성 화면 이동 비동기 통신")
     @GetMapping("/write")
     @ResponseBody
-    public String insertBulletin() {
-        return "";
+    public List<BulletinDTO> insertBulletin() {
+        return bulletinService.insertBulletin();
     }
 
     @ApiOperation(value = "게시글 작성 요청")
@@ -47,17 +53,16 @@ public class BulletinController {
             @ApiImplicitParam(name="principal", value="DEFAULT 게시글 작성자")
     })
     @PostMapping("/writeBulletin")
-    @ResponseBody
-    public String insertBulletin(BulletinDTO bulletinDTO, Principal principal) {
-        return "";
+    public BulletinDTO insertwriteBulletin(@RequestBody BulletinDTO bulletinDTO, Principal principal) {
+        return bulletinService.insertwriteBulletin(bulletinDTO,principal);
     }
 
     @ApiOperation(value = "게시글 수정 화면으로 이동 비동기 통신")
     @ApiImplicitParam(name="bulletinId", value="게시글 번호")
     @GetMapping("/update/{bulletinId}")
     @ResponseBody
-    public String updateBulletin(@PathVariable int bulletinId, Model model) {
-        return "";
+    public List<BulletinDTO> updateBulletin(@PathVariable int bulletinId, Model model) {
+        return bulletinService.updateBulletin(bulletinId,model);
     }
 
     @ApiOperation(value = "게시글 수정 요청")
@@ -68,16 +73,16 @@ public class BulletinController {
             @ApiImplicitParam(name="insertDate", value="DEFAULT 게시글 작성일"),
             @ApiImplicitParam(name="principal", value="DEFAULT 게시글 작성자")
     })
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
-    public String updateBulletin( BulletinDTO bulletinDTO) {
-        return "";
+    public void Bulletin(@RequestBody BulletinDTO bulletinDTO) {
+         bulletinService.Bulletin(bulletinDTO);
     }
 
     @ApiOperation(value = "게시글 삭제 요청")
     @ApiImplicitParam(name="bulletinId", value="게시글 번호")
-    @PostMapping("/delete")
-    public String deleteBulletin(int bulletinId) {
-        return "";
+    @DeleteMapping("/delete")
+    public void deleteBulletin(int bulletinId) {
+         bulletinService.deleteBulletin(bulletinId);
     }
 }

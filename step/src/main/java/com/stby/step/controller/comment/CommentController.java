@@ -1,25 +1,31 @@
 package com.stby.step.controller.comment;
 
 import com.stby.step.dto.commentDTO.CommentDTO;
+import com.stby.step.service.CommentService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
 @Slf4j
 public class CommentController {
 
+    @Autowired
+    CommentService commentService;
+
     @GetMapping("/getCommentList")
     @ApiOperation("댓글조회")
     @ApiImplicitParam(name="bulletinId", value="게시글 번호")
-    @ResponseBody
-    public String getList(int bulletinId, Model model) {
-        return ""  ;
+    public List<CommentDTO> getList(@PathVariable int bulletin_Id, Model model) {
+        return commentService.getList(bulletin_Id);
     }
 
 
@@ -31,9 +37,8 @@ public class CommentController {
             @ApiImplicitParam(name="user_id", value="작성자 ID")
     })
     @PostMapping("/writeComment")
-    @ResponseBody
-    public String insertComment(CommentDTO commentDTO) {
-        return "";
+    public CommentDTO insertComment(@RequestBody CommentDTO commentDTO) {
+        return commentService.insertComment(commentDTO);
     }
 
     @PutMapping("/updateComment")
@@ -45,9 +50,9 @@ public class CommentController {
             @ApiImplicitParam(name="com_date", value="댓글등록일"),
 
     })
-    @ResponseBody
-    public String updateComment(CommentDTO commentDTO) {
-        return "";
+
+    public void updateComment(@RequestBody CommentDTO commentDTO) {
+         commentService.updateComment(commentDTO);
     }
 
     @DeleteMapping("/deleteComment")
@@ -55,9 +60,8 @@ public class CommentController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "commentId", value = "댓글 테이블SEQ"),
     })
-    @ResponseBody
-    public String deleteComment(int commentId) {
-        return "";
+    public void deleteComment(@PathVariable int comment_Id) {
+         commentService.deleteComment(comment_Id);
     }
 
 }

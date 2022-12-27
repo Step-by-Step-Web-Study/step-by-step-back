@@ -9,10 +9,11 @@ import java.util.Date;
 @Setter
 public class CommentDTO {
 
-    private int commentId;
-    private int bulletinId;
+    private int comment_Id;
+    private int bulletin_Id;
     private int writerId;
     private int user_id;
     private String com_content;
     private Date com_date;
+
 }

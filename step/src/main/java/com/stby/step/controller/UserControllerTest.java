@@ -20,7 +20,7 @@ public class UserControllerTest {
     public ResponseEntity<?> findAll() {
         ResponseDTO responseDTO = new ResponseDTO();
         responseDTO.setResultCode("S0001");
-        responseDTO.setRes(userService.findAll());
+        //responseDTO.setRes(userService.findAll());
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 
@@ -28,7 +28,7 @@ public class UserControllerTest {
     public ResponseEntity<?> findTest() {
         ResponseDTO responseDTO = new ResponseDTO();
         responseDTO.setResultCode("S0001");
-        responseDTO.setRes(userService.findAll());
+        //responseDTO.setRes(userService.findAll());
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 }

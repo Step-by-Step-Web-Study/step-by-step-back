@@ -9,8 +9,15 @@ import java.util.Date;
 @Setter
 public class UserLoginDTO {
 
+    private int userId;
     private String email;
     private String userPw;
     private boolean enabled;
     private Date reg_date;
+
+    public UserLoginDTO(int userId,String userPw){
+        this.userId = userId;
+        this.userPw = userPw;
+    }
+
 }
