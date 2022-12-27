@@ -1,6 +1,6 @@
-package com.stby.step.service;
+package com.stby.step.service.comment;
 
-import com.stby.step.dao.CommentDAO;
+import com.stby.step.dao.comment.CommentDAO;
 
 import com.stby.step.dto.commentDTO.CommentDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,27 +12,22 @@ import java.util.List;
 @Service
 public class CommentService {
 
-
     @Autowired
     CommentDAO commentDAO;
 
-
-
-    public List<CommentDTO> getList(int bulletin_Id){
-        return commentDAO.getList(bulletin_Id);
+    public List<CommentDTO> getList(int bulletinId){
+        return commentDAO.getList(bulletinId);
     }
 
-    public CommentDTO insertComment(CommentDTO commentDTO){
-        return commentDAO.insertComment(commentDTO);
+    public void createComment(CommentDTO commentDTO){
+        commentDAO.createComment(commentDTO);
     }
 
     public void updateComment(CommentDTO commentDTO){
          commentDAO.updateComment(commentDTO);
     }
 
-    public void deleteComment(int comment_Id){
-        commentDAO.deleteComment(comment_Id);
+    public void deleteComment(int commentId){
+        commentDAO.deleteComment(commentId);
     }
-
-
 }

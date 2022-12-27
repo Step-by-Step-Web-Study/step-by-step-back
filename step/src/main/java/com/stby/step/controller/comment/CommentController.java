@@ -1,67 +1,65 @@
 package com.stby.step.controller.comment;
 
 import com.stby.step.dto.commentDTO.CommentDTO;
-import com.stby.step.service.CommentService;
+import com.stby.step.service.comment.CommentService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@RequestMapping("/api")
 @Slf4j
 public class CommentController {
 
     @Autowired
     CommentService commentService;
 
-    @GetMapping("/getCommentList")
-    @ApiOperation("댓글조회")
-    @ApiImplicitParam(name="bulletinId", value="게시글 번호")
-    public List<CommentDTO> getList(@PathVariable int bulletin_Id, Model model) {
-        return commentService.getList(bulletin_Id);
+    @GetMapping("/comment/{bulletinId}")
+    @ApiOperation(value = "댓글 조회", notes = "수정 화면도 동일한 요청 사용")
+    @ApiImplicitParam(name="bulletinId", value="조회 할 댓글 리스트의 게시글 번호")
+    public List<CommentDTO> getList(@PathVariable int bulletinId) {
+        return commentService.getList(bulletinId);
     }
 
-
-
-    @ApiOperation(value = "댓글등록")
+    @ApiOperation(value = "댓글 등록")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="commentId", value="댓글테이블"),
-            @ApiImplicitParam(name="bulletinId", value="게시글 번호"),
-            @ApiImplicitParam(name="user_id", value="작성자 ID")
+        @ApiImplicitParam(name="comContent", value="댓글 내용"),
+        @ApiImplicitParam(name="commentId", value="DEFAULT 댓글 고유 번호"),
+        @ApiImplicitParam(name="bulletinId", value="DEFAULT 게시글 고유 번호"),
+        @ApiImplicitParam(name="writerId", value="DEFAULT 작성자 고유 번호"),
+        @ApiImplicitParam(name="comDate", value="DEFAULT 댓글 등록 일")
     })
-    @PostMapping("/writeComment")
-    public CommentDTO insertComment(@RequestBody CommentDTO commentDTO) {
-        return commentService.insertComment(commentDTO);
+    @PostMapping("/comment")
+    public void createComment(@RequestBody CommentDTO commentDTO) {
+        commentService.createComment(commentDTO);
     }
 
-    @PutMapping("/updateComment")
-    @ApiOperation("댓글수정")
+    @PutMapping("/comment/{commentId}")
+    @ApiOperation("댓글 수정")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="bulletinId", value="게시글 번호"),
-            @ApiImplicitParam(name="user_id", value="작성자 ID"),
-            @ApiImplicitParam(name="com_content", value="댓글내용"),
-            @ApiImplicitParam(name="com_date", value="댓글등록일"),
-
+        @ApiImplicitParam(name="comContent", value="댓글 내용"),
+        @ApiImplicitParam(name="commentId", value="수정할 댓글 고유 번호"),
+        @ApiImplicitParam(name="bulletinId", value="DEFAULT 게시글 고유 번호"),
+        @ApiImplicitParam(name="writerId", value="DEFAULT 작성자 고유 번호"),
+        @ApiImplicitParam(name="comDate", value="DEFAULT 댓글 등록 일")
     })
-
-    public void updateComment(@RequestBody CommentDTO commentDTO) {
+    public void updateComment(@RequestBody CommentDTO commentDTO, @PathVariable int commentId) {
          commentService.updateComment(commentDTO);
     }
 
-    @DeleteMapping("/deleteComment")
-    @ApiOperation("댓글삭제")
+    @DeleteMapping("/comment/{commentId}")
+    @ApiOperation("댓글 삭제")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "commentId", value = "댓글 테이블SEQ"),
+        @ApiImplicitParam(name = "commentId", value = "삭제할 댓글 고유 번호")
     })
-    public void deleteComment(@PathVariable int comment_Id) {
-         commentService.deleteComment(comment_Id);
+    public void deleteComment(@PathVariable int commentId) {
+         commentService.deleteComment(commentId);
     }
-
 }

@@ -1,7 +1,7 @@
 package com.stby.step.controller;
 
 import com.stby.step.dto.ResponseDTO;
-import com.stby.step.service.UserService;
+import com.stby.step.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

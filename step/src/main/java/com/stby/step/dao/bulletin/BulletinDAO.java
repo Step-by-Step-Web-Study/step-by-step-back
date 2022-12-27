@@ -1,4 +1,4 @@
-package com.stby.step.dao;
+package com.stby.step.dao.bulletin;
 
 import com.stby.step.dto.bulletin.BulletinDTO;
 import com.stby.step.dto.commentDTO.CommentDTO;
@@ -12,29 +12,26 @@ import java.util.List;
 public class BulletinDAO {
 
     public static List<BulletinDTO> bulletin;
+    public static BulletinDTO dto;
 
     public List<BulletinDTO> getList(BulletinDTO bulletinDTO){
         return bulletin;
     }
 
-    public List<BulletinDTO> readBulletin(int bulletinId){
-        return bulletin;
+    public BulletinDTO readBulletin(int bulletinId){
+        return dto;
     }
 
     public List<BulletinDTO> insertBulletin(){
         return bulletin;
     }
 
-    public BulletinDTO insertwriteBulletin(BulletinDTO bulletinDTO, Principal principal){
-        bulletin.add((BulletinDTO) principal);
-        return bulletinDTO;
+    public void createBulletin(BulletinDTO bulletinDTO, String writer){
+        bulletin.add((BulletinDTO) bulletinDTO);
     }
 
-    public List<BulletinDTO> updateBulletin(int bulletinId, Model model){
-        return bulletin;
-    }
-    public void Bulletin(BulletinDTO bulletinDTO){
-        bulletin.stream();
+    public BulletinDTO updateBulletin(BulletinDTO bulletinDTO){
+        return dto;
     }
 
     public void deleteBulletin(int bulletinId){
