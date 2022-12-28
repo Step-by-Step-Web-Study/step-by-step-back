@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04ef2ecc-82af-4dcf-b633-9c56be1b9a12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/user/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/bulletin/BulletinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/bulletin/BulletinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/comment/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/comment/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/BulletinDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/bulletin/BulletinDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/CommentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/comment/CommentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/FollwerDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dto/commentDTO/CommentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dto/commentDTO/CommentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dto/follower/FollowerDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/BulletinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/bulletin/BulletinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/comment/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/FollwerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/UserService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,11 +91,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.StepApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
