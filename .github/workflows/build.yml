@@ -19,4 +19,6 @@ jobs:
           distribution: 'corretto'
           java-version: '11'
           cache: 'gradle'
-      - run: ./gradlew build --no-daemon
+      - run: |
+          chmod +x ./gradlew
+          ./gradlew build --no-daemon
