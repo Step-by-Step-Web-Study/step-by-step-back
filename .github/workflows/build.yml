@@ -22,3 +22,4 @@ jobs:
       - run: |
           chmod +x ./gradlew
           ./gradlew build --no-daemon
+          ls -al
