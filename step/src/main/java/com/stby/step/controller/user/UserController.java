@@ -6,11 +6,13 @@ import com.stby.step.service.user.UserService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.models.Model;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.security.Principal;
 import java.util.List;
 
@@ -47,8 +49,8 @@ public class UserController {
 
     @ApiOperation(value = "로그인")
     @GetMapping("/login")
-    public List<UserLoginDTO> loginUser() {
-        return userService.getLogin();
+    public void loginUser(HttpSession httpSession) {
+        userService.getLogin(httpSession);
     }
 
     @ApiOperation(value = "해당 게시글의 상세 조회 화면 AND 수정 화면으로 이동", notes = "수정 화면도 동일한 요청 사용")

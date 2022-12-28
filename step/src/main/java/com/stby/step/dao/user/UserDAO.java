@@ -2,9 +2,11 @@ package com.stby.step.dao.user;
 
 import com.stby.step.dto.member.UserInfoDTO;
 import com.stby.step.dto.member.UserLoginDTO;
+import io.swagger.models.Model;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.servlet.http.HttpSession;
 import java.security.Principal;
 import java.util.List;
 
@@ -20,8 +22,8 @@ public class UserDAO {
 
     }
 
-    public List<UserLoginDTO>getLogin(){
-        return users;
+    public void getLogin(HttpSession httpSession){
+
     }
 
     public UserInfoDTO readUser(int userid){

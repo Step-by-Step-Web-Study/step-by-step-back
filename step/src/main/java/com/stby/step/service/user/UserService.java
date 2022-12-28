@@ -3,9 +3,11 @@ package com.stby.step.service.user;
 import com.stby.step.dao.user.UserDAO;
 import com.stby.step.dto.member.UserInfoDTO;
 import com.stby.step.dto.member.UserLoginDTO;
+import io.swagger.models.Model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 
@@ -19,8 +21,8 @@ public class UserService {
         userDAO.createUser(userLoginDTO, userInfoDTO);
     }
 
-    public List<UserLoginDTO> getLogin(){
-        return userDAO.getLogin();
+    public void getLogin(HttpSession httpSession){
+         userDAO.getLogin(httpSession);
     }
 
     public UserInfoDTO readUser(int userid){
