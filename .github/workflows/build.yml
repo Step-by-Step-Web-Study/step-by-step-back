@@ -32,4 +32,4 @@ jobs:
         with:
           push: true
           tags: handaehyun/step-by-step-backend:latest
-          context: step
+          context: step-by-step-back
