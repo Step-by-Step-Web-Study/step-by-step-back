@@ -1,7 +1,7 @@
 package com.stby.step.controller;
 
 import com.stby.step.dto.ResponseDTO;
-import com.stby.step.service.UserService;
+import com.stby.step.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/api/v1/app/")
-public class UserController {
+public class UserControllerTest {
 
     @Autowired
     UserService userService;
@@ -20,7 +20,7 @@ public class UserController {
     public ResponseEntity<?> findAll() {
         ResponseDTO responseDTO = new ResponseDTO();
         responseDTO.setResultCode("S0001");
-        responseDTO.setRes(userService.findAll());
+        //responseDTO.setRes(userService.findAll());
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 
@@ -28,7 +28,7 @@ public class UserController {
     public ResponseEntity<?> findTest() {
         ResponseDTO responseDTO = new ResponseDTO();
         responseDTO.setResultCode("S0001");
-        responseDTO.setRes(userService.findAll());
+        //responseDTO.setRes(userService.findAll());
         return new ResponseEntity<>(responseDTO, HttpStatus.OK);
     }
 }
