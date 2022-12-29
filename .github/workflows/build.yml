@@ -7,7 +7,7 @@ on:
 
 defaults:
   run:
-    working-directory: step
+    working-directory: step-by-step-back
 
 jobs:
   build:
