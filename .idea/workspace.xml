@@ -75,30 +75,30 @@
       <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/mapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/testmapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/StepApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/config/MybatisConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/config/SwaggerConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/controller/UserControllerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/controller/bulletin/BulletinController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/controller/comment/CommentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/controller/company/CompanyController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/controller/user/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dao/TestMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dao/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dao/bulletin/BulletinDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dao/comment/CommentDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dao/company/CompanyDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dao/user/UserDAO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dto/ResponseDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dto/bulletin/BulletinDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dto/commentDTO/CommentDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dto/company/CompanyDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dto/member/UserInfoDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/dto/member/UserLoginDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/service/bulletin/BulletinService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/service/comment/CommentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/service/company/CompanyService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step/build/classes/java/main/com/stby/step/service/user/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/StepApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/config/MybatisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/controller/UserControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/controller/bulletin/BulletinController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/controller/comment/CommentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/controller/company/CompanyController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/controller/user/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dao/TestMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dao/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dao/bulletin/BulletinDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dao/comment/CommentDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dao/company/CompanyDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dao/user/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dto/ResponseDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dto/bulletin/BulletinDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dto/commentDTO/CommentDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dto/company/CompanyDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dto/member/UserInfoDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/dto/member/UserLoginDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/service/bulletin/BulletinService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/service/comment/CommentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/service/company/CompanyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/stby/step/service/user/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -107,43 +107,43 @@
       <change beforePath="$PROJECT_DIR$/.idea/step-by-step-back.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/StepApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/StepApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/config/MybatisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/bulletin/BulletinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/bulletin/BulletinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/comment/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/comment/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/company/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/company/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/TestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/TestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/bulletin/BulletinDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/bulletin/BulletinDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/comment/CommentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/comment/CommentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/company/CompanyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/company/CompanyDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dao/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/ResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dto/bulletin/BulletinDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/bulletin/BulletinDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dto/commentDTO/CommentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/commentDTO/CommentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dto/company/CompanyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/company/CompanyDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dto/member/UserInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/member/UserInfoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/dto/member/UserLoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/member/UserLoginDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/bulletin/BulletinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/service/bulletin/BulletinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/comment/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/service/comment/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/company/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/service/company/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/java/com/stby/step/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/resources/application-mysql.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/resources/mapper/mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mapper/mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/main/resources/mapper/testmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mapper/testmapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/src/test/java/com/stby/step/StepApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/stby/step/StepApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/StepApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/StepApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/bulletin/BulletinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/bulletin/BulletinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/comment/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/comment/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/company/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/company/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/controller/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/TestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/TestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/bulletin/BulletinDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/bulletin/BulletinDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/comment/CommentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/comment/CommentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/company/CompanyDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/company/CompanyDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dao/user/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/ResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/ResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/bulletin/BulletinDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/bulletin/BulletinDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/commentDTO/CommentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/commentDTO/CommentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/company/CompanyDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/company/CompanyDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/member/UserInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/member/UserInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/member/UserLoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/dto/member/UserLoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/service/bulletin/BulletinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/service/bulletin/BulletinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/service/comment/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/service/comment/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/service/company/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/service/company/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stby/step/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stby/step/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-mysql.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mapper/mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/testmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mapper/testmapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/stby/step/StepApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/stby/step/StepApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +158,7 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$/step">
+        <task path="$PROJECT_DIR$">
           <activation />
         </task>
         <task path="$PROJECT_DIR$">
