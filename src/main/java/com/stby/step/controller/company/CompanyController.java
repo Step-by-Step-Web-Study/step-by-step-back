@@ -18,7 +18,7 @@ public class CompanyController {
 
     @ApiOperation(value = "회사 공고 관심 요청")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="likeUserId", value = "관심 유저(자기 자신) 계정 고유 번호")
+            @ApiImplicitParam(name="likeUserId", value = "관심 유저(자기 자신) 계정 고유 번호", paramType = "path", dataType = "int", required = true)
     })
     @PostMapping("/company/{likeUserId}")
     public void likeCompany(@PathVariable int likeUserId) {

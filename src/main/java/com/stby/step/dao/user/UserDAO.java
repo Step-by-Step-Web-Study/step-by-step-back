@@ -1,8 +1,10 @@
 package com.stby.step.dao.user;
 
+import com.stby.step.dao.UserMapper;
 import com.stby.step.dto.member.UserInfoDTO;
 import com.stby.step.dto.member.UserLoginDTO;
 import io.swagger.models.Model;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -15,6 +17,8 @@ public class UserDAO {
 
     public static List users;
     public static UserInfoDTO dto;
+    @Autowired
+    public UserMapper userMapper;
 
     public void createUser(UserLoginDTO userLoginDTO, UserInfoDTO userInfoDTO){
         users.add(userLoginDTO);
@@ -27,7 +31,7 @@ public class UserDAO {
     }
 
     public UserInfoDTO readUser(int userid){
-        return dto;
+        return (UserInfoDTO) userMapper.Userinfo();
     }
 
     public void updateUser(UserInfoDTO userInfoDTO){
