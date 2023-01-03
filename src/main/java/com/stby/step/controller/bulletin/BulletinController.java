@@ -51,10 +51,10 @@ public class BulletinController {
 
     @ApiOperation(value = "게시글 수정 요청")
     @ApiImplicitParams({
-        @ApiImplicitParam(name="bulletinId", value="게시글 고유 번호"),
-        @ApiImplicitParam(name="content", value="게시글 내용"),
-        @ApiImplicitParam(name="writerId", value="게시글 작성자 고유 번호"),
-        @ApiImplicitParam(name="insertDate", value="게시글 작성일"),
+        @ApiImplicitParam(name="bulletinId", value="게시글 고유 번호", paramType = "query", dataType = "int", required = true),
+        @ApiImplicitParam(name="content", value="게시글 내용", paramType = "query", dataType = "String", required = true),
+        @ApiImplicitParam(name="writerId", value="게시글 작성자 고유 번호", paramType = "query", dataType = "int", required = true),
+        @ApiImplicitParam(name="insertDate", value="게시글 작성일", paramType = "query", dataType = "Date", required = true),
     })
     @PutMapping("/bulletin")
     @ResponseBody

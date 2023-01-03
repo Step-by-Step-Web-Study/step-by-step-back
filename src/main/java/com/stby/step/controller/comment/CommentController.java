@@ -30,11 +30,11 @@ public class CommentController {
 
     @ApiOperation(value = "댓글 등록")
     @ApiImplicitParams({
-        @ApiImplicitParam(name="comContent", value="댓글 내용"),
-        @ApiImplicitParam(name="commentId", value="DEFAULT 댓글 고유 번호"),
-        @ApiImplicitParam(name="bulletinId", value="DEFAULT 게시글 고유 번호"),
-        @ApiImplicitParam(name="writerId", value="DEFAULT 작성자 고유 번호"),
-        @ApiImplicitParam(name="comDate", value="DEFAULT 댓글 등록 일")
+        @ApiImplicitParam(name="comContent", value="댓글 내용", paramType = "query", dataType = "String", required = true),
+        @ApiImplicitParam(name="commentId", value="DEFAULT 댓글 고유 번호", paramType = "query", dataType = "int"),
+        @ApiImplicitParam(name="bulletinId", value="DEFAULT 게시글 고유 번호", paramType = "query", dataType = "int"),
+        @ApiImplicitParam(name="writerId", value="DEFAULT 작성자 고유 번호", paramType = "query", dataType = "int"),
+        @ApiImplicitParam(name="comDate", value="DEFAULT 댓글 등록 일", paramType = "query", dataType = "Date")
     })
     @PostMapping("/comment")
     public void createComment(@RequestBody CommentDTO commentDTO) {
