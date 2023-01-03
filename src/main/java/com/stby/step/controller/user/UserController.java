@@ -66,7 +66,7 @@ public class UserController {
             @ApiImplicitParam(name="userId", value = "DEFAULT 유저 고유 번호", paramType = "query", dataType = "int"),
             @ApiImplicitParam(name="userName", value = "유저 이름", paramType = "query", dataType = "String", required = true),
             @ApiImplicitParam(name="phoneNumber", value = "핸드폰 번호", paramType = "query", dataType = "String", required = true),
-            @ApiImplicitParam(name="educationalBackground", value = "학력 사항", paramType = "query", dataType = "", required = true),
+            @ApiImplicitParam(name="educationalBackground", value = "학력 사항", paramType = "query", dataType = "String", required = true),
             @ApiImplicitParam(name="job", value = "직업", paramType = "query", dataType = "String", required = true),
             @ApiImplicitParam(name="company", value = "회사명", paramType = "query", dataType = "String", required = true),
             @ApiImplicitParam(name="position", value = "직책", paramType = "query", dataType = "String", required = true),
